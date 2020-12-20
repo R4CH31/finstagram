@@ -9,14 +9,14 @@ get '/' do
     erb(:index)
 end
 
-get '/finstagram_posts/:id' do
-    @finstagram_post = FinstagramPost.find(params[:id])
-    erb(:"finstagram_posts/show")
-end
-
 get '/finstagram_posts/new' do
     @finstagram_post = FinstagramPost.new
     erb(:"finstagram_posts/new")
+end
+
+get '/finstagram_posts/:id' do
+    @finstagram_post = FinstagramPost.find(params[:id])
+    erb(:"finstagram_posts/show")
 end
 
 post '/finstagram_posts' do
