@@ -15,3 +15,9 @@ user_peppa.save
 
 finstagram_post_peppa = FinstagramPost.new({ photo_url: "http://naserca.com/images/marlin.jpg", user_id: user_peppa.id })
 finstagram_post_peppa.save
+
+user_mandarin = User.new({ username: "mandarin", avatar_url: "https://www.australiangeographic.com.au/wp-content/uploads/2018/06/mandarinfish.jpg", email: "mandarin@gmail.com", password: "fish" })
+user_madnarin.save
+
+finstagram_post_mandarin = FinstagramPost.new({ photo_url: "https://images.saymedia-content.com/.image/t_share/MTczODcyMTUyMjYzNTMzNjMy/mandarin-fish.jpg", user_id: user_mandarin.id })
+finstagram_post_mandarin.save
